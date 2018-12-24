@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>twitter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        body{
+        margin: 0px;
+        height: 2000px;
+    }
+    .nav{
+        box-shadow: 2px 2px 2px grey;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    
+
+        
+    }
+    .container{
+        max-width: 1140px;
+        margin: auto;
+    }
+    i{
+        color: aqua;
+        font-size: 20px;
+        float: left;
+        margin: 15px 5px;
+    }
+    .conL{
+        float: left;
+        line-height: 50px;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: 700;
+        color:rgb(102, 117, 127);
+    }
+    .search-box:focus{
+        outline:none ;   /* 外框線屬性  none去除藍色外框線*/
+        border: 2px solid blue;
+    }
+    .boxR{
+        float: right;
+        font-size: 12px;
+        margin: 15px ; 
+        color:rgb(102, 117, 127);
+    }
+    input{
+        border-radius: 15px; 
+        padding: 5px;
+    }
+    .clearfix{
+        clear: both;
+    } 
+
+    .container01{
+        max-width: 1140px;
+        margin: auto;
+        height: 50px;
+    }
+    .imgu{
+        background-image:url(/images.jfif);
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        background-color: white;
+        border-radius:50%; 
+        position: absolute;
+        top:-100px;
+        float: left;
+        border: 3px solid white; 
+    }
+    
+     /*照片變圓型的 要先建立方框，border-radius變成圓形，在用裁切overflow  */
+
+    .nav2{
+        position: relative;
+        box-shadow: 2px 2px 2px grey;
+        z-index: 50; 
+        position: sticky;
+        top: 70px;
+    }
+    .navu{
+        float: left;
+        padding-left: 220px;
+    }    
+    
+    
+    .navlink{
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+        margin: 0px 2px;
+        color: gray;
+        font-weight: 500;
+        text-decoration: none;
+
+        /* padding-left: 110PX;
+        margin-right: -87px;
+        margin-top: 2px;
+        color: gray;  
+        font-weight: 700; */
+
+    }
+    .navlink:hover{
+        border-bottom:2px solid skyblue;
+
+    }
+    .nu{
+        margin: auto;
+        font-size:20px; 
+        font-weight: 900;
+    }
+    .nu:hover{
+        color: skyblue;
+
+    }
+    .but{
+        float: right;
+        width: 100px;
+        height: 30px;
+        border: 1px solid skyblue;
+        color: skyblue;
+        background-color: white;
+        font-weight: 800;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 7px;
+        border-radius: 15px;
+    }
+    .navu2{
+        float: right;
+        padding-top: 6px;
+        border-radius:50%; 
+    }
+
+    .midd{
+        height: calc(100vh - 50px);
+        /* height: 200px; */
+        padding-top:100px ;
+        background: url(/sky.jpg);
+        background-size:cover;
+        background-position:center;
+        /* position: sticky;  */
+        top: -275px;
+        padding-top: 19px;
+    }
+    h1{
+        float: right;
+        padding-right: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <!--navbar整體包含陰影條件  -->
+        <div class="container">
+            <!--所需內容的範圍  -->
+            <div class="boxL">
+                <!--navbar左邊內容與icon  -->
+                <a class="conL" href="#">首頁 <i class="fab fa-twitter"></i></a>
+                <a class="conL" href="#">關於</a>
+            </div>
+            <div class="boxR">
+                <!--navbar右邊內容  -->
+                <input class="search-box" type="search-box" placeholder="  搜尋twitter  ">
+                <span class="conR">已經擁有帳戶?<b>登入</b></span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--中間圖片  -->
+    <div class="midd" src="/sky.jpg" alt=""></div>
+
+
+    <div class="nav2">
+        <!--下方第二個nav  -->
+        <div class="container01">
+            <div class="imgu"></div>
+            <div class="navu">
+                
+                <a class="navlink" href="#">推文<br> <span class="nu">300</span> </a>
+                <a class="navlink" href="#">正在跟隨 <br><span class="nu">522</span></a>
+                <a class="navlink" href="#">跟隨者<br><span class="nu">1.52M</span></a>
+                <a class="navlink" href="#">喜歡的內容<br><span class="nu">721</span></a>
+            </div>
+            <div class="navu2">
+            <!-- <input class="but" type="button" value="  跟隨  "> -->
+            
+            <a class='but' href="#">跟隨</a>
+            </div>
+        </div>
+    </div>
+    <h1>06林筱庭</h1>
+
+
+</body>
+
+</html>

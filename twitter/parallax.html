@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        height: 3500px;
+    }   
+    
+    .box{
+        position:sticky;
+        top: 1px;
+        z-index: 999;
+        height: 100px;
+        background-color: antiquewhite;
+    }
+    .pica{
+        background-attachment: fixed;
+        height: 800px;
+        background-image:url(/a.jpg);
+        background-size:contain; 
+    }
+
+
+    .picb{
+        background-attachment: fixed;
+        height: 800px;
+        background-image:url(/b.jpg);
+        background-size:contain; 
+
+    }
+    .box1{
+        height: 200px;
+        background-color: rgb(26, 212, 188);
+    }
+    .picc{
+        background-attachment: fixed;
+        height: 500px;
+        background-image:url(/c.jpg);
+        background-size:contain; 
+        background-repeat:no-repeat;
+        background-position:center;  
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="pica"></div>
+    <div class="box1" ></div>
+    <div class="picb" ></div>
+    <div class="box1" ></div>
+    <div class="picc" ></div>
+</body>
+</html>
