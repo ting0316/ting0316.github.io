@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .clearfix {
+        clear: both;
+    }
+
+    body {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    /* 左邊的區塊 */
+    .boxl {
+        width: 360px;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(145, 182, 250);
+        top: 0px;
+        left: 0px;
+        box-shadow: 1px 1px 5px rgb(43, 15, 109);
+
+    }
+
+    .boxl01 {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        margin: 100px auto;
+        background-image: url(/img/icon.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+
+    /* 左邊字體連結 */
+    .boxl01-1 {
+        width: 100px;
+        height: 40px;
+        margin: 0 auto;
+        font-family: 微軟正黑體;
+        font-weight: 800;
+
+    }
+
+    .boxl01-1 .net {
+        text-decoration: none;
+        color: white;
+    }
+
+    .boxl01-1 .net:active {
+        color: brown;
+        text-decoration: none;
+    }
+
+    .boxl01-2 {
+        display: unset;
+    }
+
+
+    /* 右邊區塊 */
+    .boxr {
+        max-width: calc(100% - 360px);
+        height: 100vh;
+        background-color: white;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxground {
+        width: 900px;
+        height: 580px;
+        background-color: white;
+        display: flex;
+
+    }
+
+    .boxr-1 {
+        width: 33.3%;
+        height: 100%;
+        background-color: deepskyblue;
+        background-image: url(/img/pic1.png);
+        background-size: cover;
+        background-position: center;
+        border-right: 5px solid white;
+    }
+
+    .boxr-1:hover {
+        transform: scale(.9);
+    }
+
+    .boxr-2 {
+        width: 33.3%;
+        height: 100%;
+        background-color: deepskyblue;
+        background-image: url(/img/pic2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-right: 5px solid white;
+    }
+
+    .boxr-2:hover {
+        transform: scale(.9);
+    }
+
+    .boxr-3 {
+        width: 33.3%;
+        height: 100%;
+        background-color: deepskyblue;
+        background-image: url(/img/pic3.jpg);
+        background-size: cover;
+        background-position: center;
+        border-right: 5px solid white;
+    }
+
+    .boxr-3:hover {
+        transform: scale(.9);
+    }
+
+    /* pad尺寸版本 */
+    @media(max-width:1240px) {
+        .boxl {
+            width: 360px;
+            height: 1024px;
+            position: fixed;
+            background-color: rgb(145, 182, 250);
+            top: 0;
+            left: 0;
+        }
+
+        .boxr {
+            max-width: calc(100% - 360px);
+            height: 1024px;
+            background-color: white;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .boxl01-2 {
+            display: unset;
+        }
+
+        .boxground {
+            width: 800px;
+            height: 570px;
+            flex-wrap: wrap;
+
+
+        }
+
+        .boxr-2 {
+            width: 49%;
+            height: 50%;
+            background-color: bisque;
+            border-right: 2px solid white;
+
+        }
+
+        .boxr-1 {
+            width: 100%;
+            height: 50%;
+            background-image: url(/img/pic4.jpg);
+            background-color: white;
+            background-size: cover;
+            border: 0px;
+            border-bottom: 3px solid white;
+
+        }
+
+        .boxr-3 {
+            width: 49%;
+            height: 50%;
+            background-color: rgb(255, 255, 255);
+
+        }
+    }
+
+    /* min pad尺寸 */
+    @media(max-width:768px) {
+        .boxl {
+            width: 100%;
+            height: 90px;
+            /* background-color: rgb(145, 182, 250); */
+            position: relative;
+
+
+        }
+
+        .boxl01 {
+            margin: 0px;
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            /* background-image: url(/img/icon.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center; */
+            float: left;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .boxl01-1 .net {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            text-decoration: none;
+            font-family: 微軟正黑體;
+            font-weight: 800;
+
+        }
+
+        .boxl01-2 {
+            display: unset;
+        }
+
+        .boxl01-1 .net:active {
+            color: brown;
+            text-decoration: none;
+        }
+
+        .boxl .boxl01-1:nth-child(2) {
+            position: absolute;
+            left: 57%;
+
+        }
+
+        .boxl .boxl01-1:nth-child(3) {
+            position: absolute;
+            left: 70%;
+
+        }
+
+        .boxr {
+            max-width: 100%;
+            height: calc(100% - 90px);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxground {
+            margin-top: 60px;
+            width: calc(100% - 10%);
+            height: 700px;
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .boxr-1 {
+            width: 100%;
+            height: 50%;
+            /* background-color: white;
+            background-image: url(/img/pic4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 90%; */
+
+
+
+
+        }
+
+        .boxr-2 {
+            width: 49%;
+            height: 350px;
+            background-color: white;
+            /* background-image: url(/img/pic3.jpg); */
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+            /* background-position-x: -10px; */
+
+
+        }
+
+        .boxr-3 {
+            width: 49%;
+            height: 350px;
+            background-color: indianred;
+            /* background-image: url(/img/pic2.jpg); */
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+
+
+
+        }
+
+    }
+
+    /*  */
+    @media(max-width:375px) {
+        .boxl {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(145, 182, 250);
+            position: relative;
+        }
+
+        .boxl01 {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            background-image: url(/img/icon.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 45%;
+            top: 15%
+        }
+
+        .boxl01-1 {
+            display: none;
+        }
+
+        .boxl01-2 {
+            width: 40px;
+            height: 40px;
+            background-image: url(/img/hum.png);
+            background-size: contain;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+        }
+
+        .boxground {
+            height: unset;
+        }
+
+        .boxr-1 {
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/pic4.jpg);
+            background-size: cover;
+        }
+
+        .boxr-2 {
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/pic5.jpeg);
+            background-size: cover;
+        }
+
+        .boxr-3 {
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/pic6.jfif);
+            background-size: cover;
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+    <div class="boxall">
+        <div class="boxl">
+            <div class="boxl01"></div>
+            <div class="boxl01-1"> <a class="net" href="#"> 拉拉熊美照</a></div>
+            <div class="boxl01-1"> <a class="net" href="#"> 拉拉熊生平</a></div>
+            <div class="boxl01-1"> <a class="net" href="#"> 拉拉熊來了</a></div>
+            <div class="boxl01-2"></div>
+        </div>
+
+
+        <div class="boxr">
+            <div class="boxground">
+                <div class="boxr-1"></div>
+                <div class="boxr-2"></div>
+                <div class="boxr-3"></div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
