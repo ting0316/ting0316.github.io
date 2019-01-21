@@ -1,0 +1,1245 @@
+#clearfix {
+    clear: both;
+}
+
+
+
+
+/* pc_navbar */
+
+
+#navbar_pc {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    width: 8%;
+    height: 100vh;
+    background-image: url("/img/backgroung-01.png");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+#navbar_pc .nav_icon_net {
+    padding-left: 35px;
+}
+#navbar_pc .nav_icon {
+    width: 70%;
+}
+
+#navbar_pc .select {
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: 500;
+    color: #462024;
+}
+
+#navbar_mobile{
+    display: none;
+}
+
+
+/* pc_banner */
+.GoAway{
+    top: -300px !important;
+}
+
+
+.bgcolor {
+    background-image: url("/img/backgroung-01.png");
+    position: relative;
+}
+
+#banner {
+
+    /* height: 100vh; */
+    
+    padding-bottom: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner .bannertitle {
+    height: 16%;
+    width: 26%;
+    margin-top: 54px;
+    text-align: center;
+}
+
+#banner .house04 {
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 12%;
+    transition: 3s;
+}
+
+#banner .house05 {
+    position: absolute;
+    width: 18%;
+    top: 40%;
+    left: 34%;
+    transition: 2s;
+}
+
+#banner .house06 {
+    position: absolute;
+    width: 17%;
+    top: 40%;
+    left: 54%;
+    transition: 4s;
+}
+
+#banner .house07 {
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 72%;
+    transition: 3s;
+}
+
+#banner .house01 {
+    position: absolute;
+    top: 60%;
+    width: 15%;
+    transition: 8s;
+}
+
+#banner .house02 {
+    position: absolute;
+    top: 55%;
+    left: 24%;
+    width: 13%;
+    transition: 5s;
+}
+
+#banner .house03 {
+    position: absolute;
+    top: 58%;
+    left: 65%;
+    width: 14%;
+    transition: 7s;
+}
+
+#banner .house08 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 10%;
+    transition: 6s;
+}
+
+#banner .house09 {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    width: 20%;
+    transition: 3s;
+}
+#shake{
+    width: 100%;
+    height: auto;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+
+    }
+
+    25% {
+        transform: translate(20px, 0px);
+    }
+
+    50% {
+        transform: translate(20px, 20px);
+    }
+
+    75% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#shake {
+    transform-origin: 75% 30%;
+}
+
+#shake:hover {
+    animation: shake 0.15s;
+
+}
+
+
+
+/* pc_店家地圖 */
+.bgcolor_map{
+    background-image: url("/img/backgroung-02.png");
+}
+
+/* 店家地圖等比縮放 */
+.container .image-map{
+    width: 100%;
+    height: auto;
+    margin-top: 15%; 
+    margin-bottom: 5%; 
+}
+
+/* marker*/
+.marker{
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    /* background-color: #462024; */
+    display: none;
+}
+
+.marker-1{
+    background-image: url(img/sign-s1.png);
+    background-repeat:no-repeat; 
+    top: 28%;
+    left: 56%;
+}
+
+.marker-2{
+    background-image: url(img/sign-s2.png);
+    background-repeat:no-repeat; 
+    top: 31%;
+    left: 60%;
+}
+
+.marker-3{
+    background-image: url(img/sign-s3.png);
+    background-repeat:no-repeat; 
+    top: 34%;
+    left: 63%;
+}
+
+.marker-4{
+    background-image: url(img/sign-s5.png);
+    background-repeat:no-repeat; 
+    top: 37%;
+    left: 68%;
+}
+
+.marker-5{
+    background-image: url(img/sign-s6.png);
+    background-repeat:no-repeat; 
+    top: 40%;
+    left: 73%;
+}
+
+.marker-6{
+    background-image: url(img/sign-s7.png);
+    background-repeat:no-repeat; 
+    top: 38%;
+    left: 48%;
+}
+
+.marker-7{
+    background-image: url(img/sign-s20.png);
+    background-repeat:no-repeat; 
+    top: 40%;
+    left: 52%;
+}
+
+.marker-8{
+    background-image: url(img/sign-s10.png);
+    background-repeat:no-repeat; 
+    top: 48%;
+    left: 60%;
+}
+
+.marker-9{
+    background-image: url(img/sign-c14.png);
+    background-repeat:no-repeat; 
+    top: 51%;
+    left: 84%;
+}
+
+.marker-10{
+    background-image: url(img/sign-c12.png);
+    background-repeat:no-repeat; 
+    top: 55%;
+    left: 76%;
+}
+
+.marker-11{
+    background-image: url(img/sign-c8-2.png);
+    background-repeat:no-repeat; 
+    top: 48%;
+    left: 45%;
+}
+
+.marker-12{
+    background-image: url(img/sign-c09.png);
+    background-repeat:no-repeat; 
+    top: 52%;
+    left: 50%;
+}
+
+.marker-13{
+    background-image: url(img/sign-c11.png);
+    background-repeat:no-repeat; 
+    top: 62%;
+    left: 63%;
+}
+
+.marker-14{
+    background-image: url(img/sign-c05.png);
+    background-repeat:no-repeat; 
+    top: 65%;
+    left: 50%;
+}
+
+.marker-15{
+    background-image: url(img/sign-c03.png);
+    background-repeat:no-repeat; 
+    top: 57%;
+    left: 37%;
+}
+
+.marker-16{
+    background-image: url(img/sign-c01.png);
+    background-repeat:no-repeat; 
+    top: 51%;
+    left: 30%;
+}
+
+.marker-17{
+    background-image: url(img/sign-c16.png);
+    background-repeat:no-repeat; 
+    top: 35%;
+    left: 22%;
+}
+
+.marker-18{
+    background-image: url(img/sign-c17.png);
+    background-repeat:no-repeat; 
+    top: 28%;
+    left: 43%;
+}
+
+.marker-19{
+    background-image: url(img/sign-c19.png);
+    background-repeat:no-repeat; 
+    top: 30%;
+    left: 38%;
+}
+
+
+/* 店家地圖去除圖片邊框 */
+#housemap_mobile{
+    display: none;
+}
+
+img[usemap], map area{
+    outline:none ; 
+}
+
+#housemap {
+    /* height: 100vh; */
+    /* background-color: sandybrown; */
+    position: relative;
+}
+
+
+#housemap h1 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 21px;
+    color: #462024;
+}
+
+#housemap .name-04 {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 8%;
+}
+
+/* 店家相關資訊 */
+.modal-content .picsize{
+    width: 10%;
+}
+
+.modal-content .modal-title{
+    font-family: 微軟正黑體;
+    font-weight: 800;
+    color: white;
+}
+
+.modal-content .modal-body{
+    font-family: 微軟正黑體;
+    color: #462024;
+}
+
+.modal-content .modal-header{
+    background-color: #E0D4CD;
+}
+.modal-content .modal-body{
+ background-color: #EAE1DB;
+}
+
+
+/* pc_市集 */
+#market {
+    height: 870px;
+    /* background-color: brown; */
+    position: relative;
+}
+
+#market img {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 8%;
+}
+
+#market .market_left{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 38%;
+    height: 38%;
+    background-image: url(img/C19.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#market .market_right{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 38%;
+    height: 38%;
+    background-image: url(img/moon.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#market .market_title{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    height: 5%;
+    color:#462024;
+    font-size:21px; 
+    font-weight: 600;
+    font-family: 微軟正黑體;
+    text-align: center;
+    border-bottom: 2px solid #462024;
+}
+#market .market_timeL{
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    width: 38%;
+    height: 15%;
+    /* background-color: pink; */
+    font-family: 微軟正黑體;
+    line-height: 35px;
+    text-align: center;
+    color:#462024;
+    font-size:18px; 
+}
+
+#market .market_timeR{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    width: 38%;
+    height: 15%;
+    /* background-color: pink; */
+    font-family: 微軟正黑體;
+    line-height: 35px;
+    text-align: center;
+    color:#462024;
+    font-size:18px; 
+}
+
+
+/* pc_地點地圖 */
+#placemap {
+    position: relative;
+    height: 900px;
+    /* background-color: thistle; */
+
+}
+
+#placemap h1 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 21px;
+    color: #462024;
+}
+
+#placemap img {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    width: 8%;
+}
+
+
+
+/* 審計如何去 */
+#placemap .placemap_block1 {
+    width: 100%;
+    height: 7%;
+    /* background-color: cadetblue; */
+    position: absolute;
+    top: 14%;
+    left: 4%;
+    border-bottom: 1px solid #462024;
+}
+
+#placemap .placemap_block2 {
+    width: 100%;
+    height: 10%;
+    /* background-color: cadetblue; */
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    border-bottom: 1px solid #462024;
+}
+
+#placemap .placemap_block3 {
+    width: 100%;
+    height: 10%;
+    /* background-color: cadetblue; */
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    border-bottom: 1px solid #462024;
+}
+
+.placemap_left {
+    float: left;
+    text-align: center;
+    padding-left: 150px;
+    color: #462024;
+    font-weight:bold; 
+}
+.placemap_left2 {
+    float: left;
+    text-align: center;
+    padding-left: 104px;
+    padding-top: 10px;
+    color: #462024;
+    font-weight:bold; 
+}
+
+.placemap_right {
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 60px;
+    color: #462024;
+}
+
+.placemap_right2 {
+    float: left;
+    padding-top: 22px;
+    padding-left: 60px;
+    color: #462024;
+}
+
+.placemap_right3 {
+    float: left;
+    padding-top: 22px;
+    padding-left: 60px;
+    color: #462024;
+}
+/*地圖*/
+#placemap .placemap_block4 {
+    width: 70%;
+    height: 45%;
+    background-color: cadetblue;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    overflow: hidden;
+
+}
+
+#placemap .placemap_block4 #shenjimap {
+    width: 100%;
+    height: 460px;
+    transform: translateY(-50px);
+}
+
+
+/* pc_附近景點 */
+#viewpoint {
+    position: relative;
+    height: 510px;
+    /* background-color: rgb(179, 179, 179); */
+}
+
+#viewpoint h1 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 21px;
+    color: #462024;
+    
+}
+
+#viewpoint img {
+    position: absolute;
+    width: 100%;
+}
+
+#viewpoint .box{
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    width: 100%;
+    height: 60%;
+    /* background-color: rgb(179, 179, 179); */
+}
+
+.swiper-pagination{
+    position: absolute;
+    top: 110%;
+    left: 45%;
+}
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  
+
+/* pc_消息 */
+#news {
+    position: relative;
+    height: 800px;
+    /* background-color: gray; */
+}
+
+#news h1 {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-family: 微軟正黑體;
+    font-weight: 600;
+    font-size: 21px;
+    color: #462024;
+}
+
+.swiper-slide{
+    background-color: #EDE5DF;
+}
+
+
+#news .news_box{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 100%;
+
+}
+
+#news .news_box .nav-item{
+    color: #69221F;
+    font-weight: 700;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #69221F;
+}
+
+#nav-tabContent .nav-home1L{
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 12px;
+    border: 1px solid #69221f;
+    color:#462024;
+    font-family: 微軟正黑體;
+    /* float: left; */
+}
+
+#nav-tabContent .nav-home1R{
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px 0px;
+    color:#462024;
+    font-family: 微軟正黑體;
+    /* float: left; */
+}
+
+.more{
+    color: #462024;
+    float: right; 
+}
+
+#news .newpic{
+    position: absolute;
+    width: 100%;
+    top: 72%;
+    left: 5%;
+}
+
+
+/* pc_關於審計 */
+
+.aboutshbackground {
+    background-image: url(/img/background-03.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    
+    
+}
+#aboutsh {
+    position: relative;
+    height: 1500px;
+   
+}
+
+#aboutsh h1 {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-family: 微軟正黑體;
+    font-weight: 600;
+    font-size: 21px;
+    color: #462024;
+}
+
+#aboutsh .aboutsh_block1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 100%;
+    height: 13%;
+}
+
+#aboutsh .aboutsh_block2 {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    width: 100%;
+    height: 13%;
+}
+
+#aboutsh .aboutsh_block3 {
+    position: absolute;
+    top: 690px;
+    left: 100px;
+    width: 100%;
+    height: 13%;
+}
+
+#aboutsh .aboutsh_left{
+    width: 300px;
+    height: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+
+#aboutsh h2 {
+    padding: 10px;
+    font-family: 微軟正黑體;
+    font-weight: 600;
+    font-size: 18px;
+    color: #462024;
+}
+
+#aboutsh p {
+    font-family: 微軟正黑體;
+    font-weight: 100;
+    font-size: 14px;
+    color: #462024;
+    padding-right: 20px;
+}
+
+
+#aboutsh .formpic{
+    position: absolute;
+    width: 250px;
+    bottom: 220px;
+    left: 15%;
+}
+
+#aboutsh .form-box{
+    position: absolute;
+    width: 50%;
+    bottom: 50px;
+    right: 0px;
+}
+
+#aboutsh .form-box .formtitle{
+    font-family: 微軟正黑體;
+    font-weight: 600;
+    font-size: 21px;
+    color: #462024;
+}
+
+#aboutsh .form-box .formword{
+    font-family: 微軟正黑體;
+    font-weight: 900;
+    font-size: 16px;
+    color: #462024;
+}
+
+#aboutsh .form-box .form-group{
+    font-family: 微軟正黑體;
+    font-weight: 800;
+    font-size: 16px;
+    color: #462024;
+}
+
+#aboutsh .form-box .btn-primary{
+    float: right;
+    background-color: #69221F;
+    border: none;
+}
+
+
+/* pc_footer */
+#footer {
+    height: 200px;
+}
+
+#footerbg{
+    background-color: #99423B;
+
+}
+
+#footerbg .footericon{
+    float: left;
+    padding: 30px 70px 30px 50px;
+    color: white;
+
+}
+
+#footerbg .footerleft{
+    float: left;
+    margin-top:10px; 
+    padding: 15px;
+    color: white;
+    border-left:2px solid white; 
+    font-family:微軟正黑體;
+    font-size: 14px; 
+}
+
+#footerbg .footerright{
+    float: right;
+    padding: 26px 0px;
+    color: white;
+    font-family:微軟正黑體;  
+    font-size: 14px;  
+}
+
+.footericon_net{
+    display: none;
+}
+
+
+@media (max-width:640px){
+    
+ /* navbar */
+#navbar_pc{
+    display: none;
+}
+
+#navbar_mobile{
+    display: block;
+    background-color: #69221F;
+
+}
+#navbar_mobile #navbar_humber{
+    display: block;
+    width: 40px;
+    height: 35px;
+    background-image: url(/img/hamber.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    
+    
+}
+
+#navbar_mobile .nav_icon_mobile {
+    display:none;     
+}
+
+#navbar_mobile .nav_icon_mobile.show {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    position: absolute;
+    top: 150px;
+    background-image: url(/img/backgroung-01.png);
+    z-index: 999;
+    
+}
+#navbar_mobile .select2{
+    color: #462024;
+    padding: 20px 288px;
+    font-size: 16px;
+    text-decoration: none; 
+    font-family:微軟正黑體;
+    border-bottom:2px solid #462024; 
+}
+
+
+
+
+/* house map */
+
+#banner{
+    height: 100vh;
+}
+.container .image-map {
+    display:none;
+}
+
+#housemap h1{
+    top: 1%;
+    left: 0px;
+    font-size: 16px;
+}
+
+#housemap .name-04{
+top: 4%;
+left: 0%;
+width: 12%;
+}
+#banner .house01{
+    top: 51%;
+}
+#banner .house02{
+    top: 48%;
+}
+#banner .house03{
+    top: 50%;
+}
+#housemap_mobile{
+    display: block;
+}
+
+#housemap_mobile .housemap_mobile_name{
+padding: 10px 3px;
+margin: 0px;
+}
+
+#housemap_mobile .housemap_mobile_name:hover{
+    color: white ;
+    background-color: #69221f;
+
+}
+
+#housemap_mobile .housemap_mobile_block1{
+    float: left;
+    padding: 75px 20px;
+    font-family:微軟正黑體;
+    color: #462024;  
+    font-size: 12px; 
+}
+#housemap_mobile .housemap_mobile_block2{
+    float: right;
+    padding: 75px 20px;
+    font-family:微軟正黑體;
+    color: #462024;
+    font-size: 12px;  
+}
+#housemap_mobile .housemap_mobile_block3{
+    float: left;
+    padding: 0px 20px 10px 20px;
+    font-family:微軟正黑體;
+    color: #462024;
+    font-size: 12px;   
+}
+
+#housemap_mobile .housemap_mobile_block4{
+    float: right;
+    padding: 0px 35px;
+    font-family:微軟正黑體;
+    color: #462024;
+    font-size: 12px;   
+}
+
+/* 市集 */
+#market{
+    height: 600px;
+}
+#market img{
+    top: 4%;
+    left: 0%;
+    width: 12%;  
+}
+
+#market .market_left {
+    width: 30%;
+    height: 30%;
+    background-size: cover;
+}
+
+#market .market_right {
+    width: 29%;
+    height: 24%;
+    top: 27%;
+    left: 55%;
+    background-size: cover;
+}
+
+#market .market_title{
+    top: 55%;
+    font-size: 16px;
+}
+
+#market .market_timeL{
+    top: 62%;
+    left: 7%;
+    font-size: 14px;
+}
+#market .market_timeR{
+    top: 62%;
+    font-size: 14px;
+}
+
+/* 去審計 */
+#placemap h1{
+    top: 1%;
+    left: 0px;
+    font-size: 16px;
+}
+
+#placemap img{
+    top: 4%;
+    left: 0%;
+    width: 12%;
+}
+
+#placemap .placemap_block1{
+    left: 0px;
+}
+#placemap .placemap_block2{
+    left: 0px;
+}
+#placemap .placemap_block3{
+    left: 0px;
+}
+
+.placemap_right{
+    font-size: 14px;
+}
+
+.placemap_left{
+    padding-left: 0px;
+    font-size: 14px;
+}
+.placemap_right2{
+    float: none;
+    padding-top: 0px;
+    padding-left: 100px;
+    font-size: 14px;
+}
+
+.placemap_left2{
+padding:0px 20px 0px 0px;
+font-size: 14px;
+}
+
+.placemap_right3{
+float: none;
+padding-top: 0px;
+font-size: 14px;
+}
+
+
+
+/* 審計地點與周邊 */
+#placemap .placemap_block4{
+    width: 100%;
+    height: 40%;
+    left: 0px;
+}
+
+#viewpoint{
+    height: 310px;
+}
+#viewpoint h1{
+    top: -12%;
+    left: 0px;
+    font-size: 16px;
+}
+
+#viewpoint .box{
+    top: 0%;
+    left:0%;
+    height: 50%;
+}
+
+/* 審計公告 */
+#news{
+    height: 600px;
+}
+#news h1{
+    top: 5%;
+    left: 0px;
+    font-size: 16px;
+}
+
+#news .news_box{
+    top: 11%;
+    left: 0%;
+}
+
+#news .news_box .nav-item{
+    font-size: 16px;    
+}
+
+#nav-tabContent .nav-home1R{
+    font-size: 14px;
+}
+
+#news .newpic{
+    top: 75%;
+    left: 0%;
+}
+
+
+/* 關於審計 */
+
+#aboutsh{
+    height: 1830px;
+}
+
+#aboutsh h1{
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+}
+#aboutsh h2{
+padding: 8px 0px;
+font-size: 15px;
+margin: 0px;
+}
+#aboutsh p{
+font-weight: 700;
+font-size: 12px;
+}
+#aboutsh .aboutsh_block1{
+    left: 0px;
+    top: 50px;
+}
+
+#aboutsh .aboutsh_left{
+    float: none;
+    width: 100%;
+}
+
+#aboutsh .aboutsh_block2{
+    left: 0px;
+    top: 480px;
+}
+
+#aboutsh .aboutsh_block3{
+    left: 0px;
+    top: 830px;
+
+}
+
+#aboutsh .formpic{
+    display: none;
+}
+
+#aboutsh .form-box{
+    width: 100%;
+}
+
+#aboutsh .form-box .formtitle{
+    font-size: 16px;
+}
+
+#aboutsh .form-box .formword{
+    font-size: 14px;
+}
+
+.form-box label{
+    font-size: 14px;
+}
+/* footer */
+
+.footerlogo{
+    width: 105px;
+}
+
+.footerinc{
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerbg .footericon{
+    padding: 10px 0px;
+}
+
+#footerbg .footerleft{
+    padding: 0px 16px;
+    border-left:none;
+    line-height: 10px;
+    font-size:12px; 
+}
+
+#footerbg .footerright{
+    display: none;
+}
+
+.footericon_net{
+    display: block;
+    margin-top: 10px;
+    
+}
+.footericon_net img{
+    width: 7%;
+    margin: 3px 7px;
+    float: left;
+    padding-top: 35px;
+}
+
+
+
+
+
+
+
+}
