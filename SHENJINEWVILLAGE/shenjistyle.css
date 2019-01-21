@@ -14,7 +14,7 @@
     top: 0px;
     width: 8%;
     height: 100vh;
-    background-image: url("/img/backgroung-01.png");
+    background-image: url("img/backgroung-01.png");
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@
 
 
 .bgcolor {
-    background-image: url("/img/backgroung-01.png");
+    background-image: url("img/backgroung-01.png");
     position: relative;
 }
 
@@ -179,7 +179,7 @@
 
 /* pc_店家地圖 */
 .bgcolor_map{
-    background-image: url("/img/backgroung-02.png");
+    background-image: url("img/backgroung-02.png");
 }
 
 /* 店家地圖等比縮放 */
@@ -719,7 +719,7 @@ img[usemap], map area{
 /* pc_關於審計 */
 
 .aboutshbackground {
-    background-image: url(/img/background-03.jpg);
+    background-image: url(img/background-03.jpg);
     background-repeat: no-repeat;
     background-position-y: 100%;
     
@@ -888,7 +888,7 @@ img[usemap], map area{
     display: block;
     width: 40px;
     height: 35px;
-    background-image: url(/img/hamber.png);
+    background-image: url(img/hamber.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -908,7 +908,7 @@ img[usemap], map area{
     font-size: 22px;
     position: absolute;
     top: 150px;
-    background-image: url(/img/backgroung-01.png);
+    background-image: url(img/backgroung-01.png);
     z-index: 999;
     
 }
