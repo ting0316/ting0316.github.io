@@ -914,7 +914,7 @@ img[usemap], map area{
 }
 #navbar_mobile .select2{
     color: #462024;
-    padding: 20px 288px;
+    padding: 15px 155px;
     font-size: 16px;
     text-decoration: none; 
     font-family:微軟正黑體;
@@ -940,7 +940,7 @@ img[usemap], map area{
 }
 #banner .bannertitle {
 height: 13%;
-width: 30%;
+width: 33%;
 margin-top: 45px;
 }
 
@@ -963,16 +963,24 @@ width: 12%;
 }
 
 #housemap_mobile .housemap_mobile_name{
+text-decoration:none;
 padding: 10px 3px;
 margin: 0px;
 }
 
 #housemap_mobile .housemap_mobile_name:hover{
-    color: white ;
-    background-color: #69221f;
-
+background-color: #69221f;
 }
 
+#housemap_mobile a{
+    color: #69221f;
+    text-decoration: none;
+}
+
+#housemap_mobile a:hover{
+    color: white;
+    
+}
 #housemap_mobile .housemap_mobile_block1{
     float: left;
     padding: 75px 0px;
@@ -991,7 +999,7 @@ margin: 0px;
     float: left;
     font-family:微軟正黑體;
     color: #462024;
-    padding: 85px 0px;
+    padding: 100px 0px;
     font-size: 13px;   
 }
 
