@@ -14,7 +14,7 @@
     top: 0px;
     width: 8%;
     height: 100vh;
-    background-image: url("/img/backgroung-01.png");
+    background-image: url("img/backgroung-01.png");
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -886,8 +886,8 @@ img[usemap], map area{
 }
 #navbar_mobile #navbar_humber{
     display: block;
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
     background-image: url(img/hamber.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -938,6 +938,11 @@ img[usemap], map area{
     left: 0px;
     font-size: 16px;
 }
+#banner .bannertitle {
+height: 13%;
+width: 30%;
+margin-top: 45px;
+}
 
 #housemap .name-04{
 top: 4%;
@@ -970,32 +975,32 @@ margin: 0px;
 
 #housemap_mobile .housemap_mobile_block1{
     float: left;
-    padding: 75px 20px;
+    padding: 75px 0px;
     font-family:微軟正黑體;
     color: #462024;  
-    font-size: 12px; 
+    font-size: 13px; 
 }
 #housemap_mobile .housemap_mobile_block2{
     float: right;
-    padding: 75px 20px;
+    padding: 115px 0px;
     font-family:微軟正黑體;
     color: #462024;
-    font-size: 12px;  
+    font-size: 13px;  
 }
 #housemap_mobile .housemap_mobile_block3{
     float: left;
-    padding: 0px 20px 10px 20px;
     font-family:微軟正黑體;
     color: #462024;
-    font-size: 12px;   
+    padding: 85px 0px;
+    font-size: 13px;   
 }
 
 #housemap_mobile .housemap_mobile_block4{
     float: right;
-    padding: 0px 35px;
+    padding: 0px 15px;
     font-family:微軟正黑體;
     color: #462024;
-    font-size: 12px;   
+    font-size: 13px;   
 }
 
 /* 市集 */
