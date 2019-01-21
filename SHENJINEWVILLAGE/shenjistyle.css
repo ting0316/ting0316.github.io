@@ -997,7 +997,7 @@ margin: 0px;
 
 #housemap_mobile .housemap_mobile_block4{
     float: right;
-    padding: 0px 15px;
+    padding: 0px 0px;
     font-family:微軟正黑體;
     color: #462024;
     font-size: 13px;   
@@ -1015,13 +1015,13 @@ margin: 0px;
 
 #market .market_left {
     width: 30%;
-    height: 30%;
+    height: 26%;
     background-size: cover;
 }
 
 #market .market_right {
-    width: 29%;
-    height: 24%;
+    width: 33%;
+    height: 19%;
     top: 27%;
     left: 55%;
     background-size: cover;
@@ -1043,6 +1043,9 @@ margin: 0px;
 }
 
 /* 去審計 */
+#placemap{
+    height: 500px;
+}
 #placemap h1{
     top: 1%;
     left: 0px;
@@ -1050,7 +1053,7 @@ margin: 0px;
 }
 
 #placemap img{
-    top: 4%;
+    top: 6%;
     left: 0%;
     width: 12%;
 }
@@ -1066,29 +1069,29 @@ margin: 0px;
 }
 
 .placemap_right{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .placemap_left{
     padding-left: 0px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .placemap_right2{
     float: none;
     padding-top: 0px;
-    padding-left: 100px;
-    font-size: 14px;
+    padding-left: 82px;
+    font-size: 12px;
 }
 
 .placemap_left2{
 padding:0px 20px 0px 0px;
-font-size: 14px;
+font-size: 12px;
 }
 
 .placemap_right3{
 float: none;
 padding-top: 0px;
-font-size: 14px;
+font-size: 12px;
 }
 
 
@@ -1101,7 +1104,7 @@ font-size: 14px;
 }
 
 #viewpoint{
-    height: 310px;
+    height: 180px;
 }
 #viewpoint h1{
     top: -12%;
@@ -1110,10 +1113,11 @@ font-size: 14px;
 }
 
 #viewpoint .box{
-    top: 0%;
+    top: 10%;
     left:0%;
-    height: 50%;
+    height: 70%;
 }
+
 
 /* 審計公告 */
 #news{
@@ -1213,6 +1217,8 @@ font-size: 12px;
 .footerinc{
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 110px;
+    text-align: center;
 }
 #footerbg .footericon{
     padding: 10px 0px;
