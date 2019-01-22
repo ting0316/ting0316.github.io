@@ -876,11 +876,11 @@ img[usemap], map area{
     font-size: 14px;  
 }
 
-.footericon_net{
+#footerbg .footericon_net{
     display: none;
 }
 
-.footerbottom{
+#footerbg .footerbottom{
     display: none;
 }
 
