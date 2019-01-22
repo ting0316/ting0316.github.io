@@ -1250,7 +1250,7 @@ font-size: 12px;
     display: none;
 }
 
-.footericon_net{
+#footerbg .footericon_net{
     display: block;
     margin-top: 10px;
     
@@ -1261,7 +1261,7 @@ font-size: 12px;
     float: left;
 }
 
-.footerbottom  {
+#footerbg .footerbottom  {
     color: white;
     display: block;
     padding: 10px 10px;
