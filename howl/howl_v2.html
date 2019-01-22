@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>霍爾的移動城堡</title>
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+
+            /* 這個要記得刪掉喔 */
+            /* height: 500vh; */
+        }
+
+        .container {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .float-l {
+            float: left;
+        }
+
+        .float-r {
+            float: right;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        /*----------nav----------*/
+        nav {
+            width: 100%;
+            height: 20px;
+            background-color: #46636C;
+        }
+
+        nav .container {
+            position: relative;
+        }
+
+        nav .container img {
+            position: absolute;
+            width: 250px;
+            top: 0;
+            left: calc(50% - 125px);
+        }
+
+        /*----------banner----------*/
+        #banner {
+            width: 100%;
+            height: 600px;
+            background-image: url(img/picall.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /*----------nav2----------*/
+
+        #nav2 {
+            width: 100%;
+            height: 100%;
+            background-color: #46636C;
+            position: sticky;
+            top: 0px;
+            z-index: 999;
+            box-shadow: 1px 1px 2px #2B353E;
+        }
+
+        .container .mobile_nav_tog #nav2_tog {
+            display: unset;
+
+        }
+
+        #nav2 .nav2_items .botten {
+            width: 25%;
+            height: 100%;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            color: #E7513B;
+            text-shadow: 3px 3px 1px #2B353E;
+            font-weight: 900;
+            /*這裡可以用padding*/
+        }
+
+
+
+        /*----------block1----------*/
+        #block1 {
+            width: 100%;
+            height: 90vh;
+            background-image: url(img/all3.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0;
+            position: relative;
+        }
+
+        #block1 .box {
+            width: 750px;
+            height: 60vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: calc(50% - 175px);
+            left: calc(50% - 375px);
+        }
+
+        #block1 .box h1 {
+            font-weight: 900;
+            color: #E7513B;
+            text-shadow: 1px 1px 1px #2E3841;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        #block1 .box p {
+            letter-spacing: 5px;
+            line-height: 30px;
+            padding: 20px 30px 30px 30px;
+            font-family: 微軟正黑體;
+            color: rgb(201, 213, 216);
+            text-shadow: 1px 1px 1px #2E3841;
+            margin: 0;
+        }
+
+
+        /*----------block2----------*/
+        #block2 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/all.jpg);
+            background-position-y: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        /*----------block3----------*/
+        #block3 {
+            width: 100%;
+            height: 50vh;
+            background-color: black;
+        }
+
+        #block3 .container {
+            background-color: black;
+        }
+
+        #block3 .container .float-l {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        #block3 .container .float-l iframe {
+            margin: 50px 75px;
+        }
+
+        #block3 .container .float-r {
+            width: 50%;
+            height: 100%;
+            padding: 50px 30px 0px 30px;
+
+        }
+
+        #block3 .container .float-r h1 {
+            letter-spacing: 9px;
+            line-height: 5px;
+            font-family: 微軟正黑體;
+            color: #E7513B;
+        }
+
+        #block3 .container .float-r p {
+            letter-spacing: 9px;
+            line-height: 30px;
+            font-family: 微軟正黑體;
+            color: rgb(201, 213, 216);
+            font-size: 900;
+        }
+
+        /*----------block4----------*/
+        #block4 {
+            width: 100%;
+            height: 50vh;
+            background-color: black;
+        }
+
+        #block4 .container {
+            background-color: black;
+        }
+
+        #block4 .container .float-l {
+            width: 50%;
+            height: 100%;
+            padding: 50px 40px 0px 70px;
+
+        }
+
+        #block4 .container .float-l h1 {
+            letter-spacing: 9px;
+            line-height: 5px;
+            font-family: 微軟正黑體;
+            color: #E7513B;
+        }
+
+
+        #block4 .container .float-l p {
+            letter-spacing: 9px;
+            line-height: 30px;
+            font-family: 微軟正黑體;
+            color: rgb(201, 213, 216);
+            font-size: 900;
+        }
+
+        #block4 .container .float-r {
+            width: 50%;
+            height: 100%;
+
+
+
+        }
+
+        #block4 .float-r iframe {
+            margin: 20px 0px 0px 50px;
+        }
+
+        /*----------block5----------*/
+        #block5 {
+            width: 100%;
+            height: 50vh;
+            background-color: black;
+        }
+
+        #block5 .float-l {
+            width: 50%;
+            height: 100%;
+            background-image: url(img/underpic.jpg);
+            background-size: cover;
+            background-position-y: 100%;
+
+        }
+
+        #block5 .float-l p {
+            width: 200px;
+            letter-spacing: 9px;
+            line-height: 27px;
+            font-family: 微軟正黑體;
+            color: rgb(201, 213, 216);
+            font-size: 25px;
+            font-weight: 900;
+            text-align: center;
+            border: 1px solid;
+            padding: 60px 0;
+            margin: 120px auto;
+        }
+
+        #block5 .float-l:hover {
+            width: 50%;
+            height: 100%;
+            transition: 0.5ms cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0.3;
+            background-color: black;
+            float: left;
+
+        }
+
+        #block5 .float-r {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(107, 85, 82);
+            background-image: url(img/underpic2.jpg);
+            background-size: cover;
+            background-position-y: 50%;
+
+        }
+
+        #block5 .float-r p {
+            width: 200px;
+            letter-spacing: 9px;
+            line-height: 27px;
+            font-family: 微軟正黑體;
+            color: rgb(201, 213, 216);
+            font-size: 25px;
+            font-weight: 900;
+            text-align: center;
+            border: 1px solid;
+            padding: 60px 0;
+            margin: 120px auto;
+        }
+
+        #block5 .float-r:hover {
+            width: 50%;
+            height: 100%;
+            transition: 0.5ms cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0.3;
+            background-color: black;
+            float: left;
+        }
+
+        /*----------footer----------*/
+        .footer {
+            background-color: black;
+        }
+
+        .footer .footer-w {
+            color: white;
+            font-size: 5px;
+            padding-left: calc(50% - 100px);
+        }
+
+        #back_to_top {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            background-image: url(img/kash.png);
+            background-size: contain;
+            right: 50px;
+            bottom: 50px;
+            font-size: 15px;
+            text-align: center;
+            padding: 25px;
+            font-family: 微軟正黑體;
+            color: black;
+            display: none;
+        }
+
+        #back_to_top.show {
+            display: block;
+        }
+
+
+        @media(max-width:480px) {
+
+
+            .container .mobile_nav_tog #nav2_tog {
+                display: block;
+                width: 40px;
+                height: 40px;
+                background-image: url(img/hum.png);
+                background-size: cover;
+                text-align: center;
+                border-radius: 5px;
+                float: left;
+
+
+            }
+
+            .container .nav2_items {
+                display: none;
+                flex-wrap: wrap;
+
+            }
+
+            .container .nav2_items.show {
+                display: flex;
+
+            }
+
+            #nav2 .nav2_items .botten {
+                text-align: center;
+                width: 100%;
+            }
+
+            #block1{
+                background-image: url(img/all5.jpg);
+                background-size: cover ;
+            }
+
+            #block1 .box {
+                width: 90%;
+                height: 95%;
+                background-color: rgba(0, 0, 0, 0.4);
+                position: absolute;
+                top: calc(50% - 265px);
+                left: 16px;
+            }
+
+            #block1 .box h1 {
+                font-size: 20px;
+            }
+
+            #block1 .box p {
+                line-height: 25px;
+            }
+
+            #block2{
+                background-size: cover;
+                background-position: center;
+                
+            }
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <nav>
+        <div class="container">
+            <img src="img/title.png" alt="">
+        </div>
+    </nav>
+
+
+
+    <div id="banner"></div>
+
+
+
+    <div id="nav2">
+        <div class="container">
+            <div class="mobile_nav_tog">
+                <span id="nav2_tog">
+
+                </span>
+
+            </div>
+
+            <div class="nav2_items">
+                <a href=" #block1 " class="botten">劇情介紹</a>
+                <a href="#block2" class="botten">主要人物</a>
+                <a href="#block3" class="botten">前導預告</a>
+                <a href="#block5" class="botten">相關訊息</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div id="block1">
+        <div class="box">
+            <h1>劇情介紹</h1>
+            <p>18歲的蘇菲和繼母哈妮居住在荒地附近的城鎮中。自從父親死後，便接手了父親的哈達帽子店。某日蘇菲前往探望在伽利俐西點店裡工作的繼妹蕾蒂，途中被兩名軍官搭訕，蘇菲不知該如何擺脫時被突然冒出的魔法師霍爾出手搭救。
+                在霍爾離去後，蘇菲遇見四處尋找霍爾的荒野女巫。當荒野女巫得知霍爾今天與蘇菲打過照面時，為了報復和他在一起的蘇菲，便對她下了一個變老的詛咒。
+                變成老婦的蘇菲經過思考後決定離家出走。在離家的路上時蘇菲無意間救了一個有著生命的魔法稻草人，之後稻草人為蘇菲引來了霍爾的移動城堡。而進入城堡的蘇菲，便開始與城堡內的魔法師霍爾、火焰惡魔卡西法及魔法學徒馬魯克等人展開了奇妙的生活。</p>
+        </div>
+    </div>
+
+    <div id="block2"></div>
+
+    <div id="block3">
+        <div class="container">
+            <div class="float-l">
+                <iframe width="80%" height="80%" src="https://www.youtube.com/embed/iwROgK94zcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="float-r">
+                <h1>前導預告</h1>
+                <p>2004年霍爾與蘇菲將帶您進入奇幻旅程 ~</p>
+                <p>《霍爾的移動城堡》（ハウルの動く城），是在2004年由宮崎駿導演，後繼動畫電影《神隱少女》之後，吉卜力工作室推出的一部動畫電影，是帶有宮崎駿動漫特色的作品。作品總作畫張數達148,786張，片長119分11秒。[4]
+                    故事內容改編自英國奇幻文學作家黛安娜·韋恩·瓊斯在1986年的著作《魔幻城堡》（Howl's Moving Castle）。</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div id="block4">
+        <div class="container">
+            <div class="float-l">
+                <h1>電影插曲</h1>
+                <p>宮崎駿繼動畫電影《千與千尋》之後，在2004年冬推出作品《哈爾的移動城堡》。改編自英國的兒童小說家黛安娜·W·瓊斯的《魔法師哈威爾與火之惡魔》。這是繼1990年《魔女宅急便》後，宮崎駿又一部帶有濃厚原著色彩的作品。</p>
+            </div>
+            <div class="float-r">
+                <iframe class="iframe" width="80%" height="80%" src="https://www.youtube.com/embed/OuieVBnF80Y"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <div id="block5">
+        <div class="float-l">
+            <p>關於吉普力</p>
+        </div>
+        <div class="float-r">
+            <p>周邊商品</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-w">@僅為切版練習，不作任何商業用途</div>
+    </div>
+    <div id="back_to_top">
+        回到<br>最上
+    </div>
+
+
+    <script>
+        // 宣告
+        let back_to_top;
+        back_to_top = document.querySelector("#back_to_top");
+
+        // 觸發事件
+        back_to_top.onclick = function () {
+            document.documentElement.scrollTop = 0;
+        }
+
+        // "回到最上"顯示與隱藏設定
+        window.onscroll = function () {
+            let scrollTop = document.documentElement.scrollTop;
+            console.log(scrollTop);
+
+            if (scrollTop > 150) {
+
+                back_to_top.classList.add("show");
+            } else {
+
+                back_to_top.classList.remove("show");
+            }
+
+        }
+        let nav2_tog;
+        nav2_tog = document.querySelector("#nav2_tog");
+        nav2_tog.onclick = function () {
+            document.querySelector(".nav2_items").classList.toggle("show");
+        }
+
+    </script>
+</body>
+
+</html>
