@@ -2,7 +2,9 @@
     clear: both;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* pc_navbar */
@@ -33,8 +35,15 @@
 #navbar_pc .select {
     font-size: 20px;
     font-family: 微軟正黑體;
-    font-weight: 500;
+    font-weight: 700;
     color: #462024;
+    padding: 5px 20px;  
+    text-decoration: none;
+}
+
+#navbar_pc .select:hover {
+    color: #69221F;
+    border:2px solid #69221F; 
 }
 
 #navbar_mobile{
@@ -873,7 +882,7 @@ img[usemap], map area{
 
 
 @media (max-width:640px){
-    
+
  /* navbar */
 #navbar_pc{
     display: none;
@@ -882,20 +891,19 @@ img[usemap], map area{
 #navbar_mobile{
     display: block;
     background-color: #69221F;
-
 }
 #navbar_mobile #navbar_humber{
     display: block;
     width: 30px;
     height: 25px;
-    background-image: url(img/hamber.png);
+    background-image: url(/img/hamber.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     right: 10%;
-    top: 7%;
-    
-    
+    top: 7%; 
+    position: fixed;
+    z-index: 9999;
 }
 
 #navbar_mobile .nav_icon_mobile {
@@ -909,7 +917,9 @@ img[usemap], map area{
     position: absolute;
     top: 150px;
     background-image: url(img/backgroung-01.png);
-    z-index: 999;
+    /* z-index: 999; */
+    position: fixed;
+    z-index: 9999;
     
 }
 #navbar_mobile .select2{
@@ -947,7 +957,7 @@ margin-top: 45px;
 #housemap .name-04{
 top: 4%;
 left: 0%;
-width: 12%;
+width: 20%;
 }
 #banner .house01{
     top: 51%;
@@ -1018,7 +1028,7 @@ background-color: #69221f;
 #market img{
     top: 4%;
     left: 0%;
-    width: 12%;  
+    width: 20%;  
 }
 
 #market .market_left {
@@ -1043,11 +1053,11 @@ background-color: #69221f;
 #market .market_timeL{
     top: 62%;
     left: 7%;
-    font-size: 14px;
+    font-size: 12px;
 }
 #market .market_timeR{
     top: 62%;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* 去審計 */
@@ -1063,10 +1073,11 @@ background-color: #69221f;
 #placemap img{
     top: 6%;
     left: 0%;
-    width: 12%;
+    width: 20%;
 }
 
 #placemap .placemap_block1{
+    height: 9%;
     left: 0px;
 }
 #placemap .placemap_block2{
