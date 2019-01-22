@@ -2,7 +2,9 @@
     clear: both;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* pc_navbar */
@@ -33,9 +35,10 @@
 #navbar_pc .select {
     font-size: 20px;
     font-family: 微軟正黑體;
-    font-weight: 500;
+    font-weight: 700;
     color: #462024;
     padding: 5px 20px;  
+    text-decoration: none;
 }
 
 #navbar_pc .select:hover {
@@ -893,7 +896,7 @@ img[usemap], map area{
     display: block;
     width: 30px;
     height: 25px;
-    background-image: url(/img/hamber.png);
+    background-image: url(img/hamber.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
