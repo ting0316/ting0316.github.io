@@ -25,11 +25,11 @@ html{
     padding-bottom: 60px;
 }
 
-#navbar_pc .nav_icon_net {
+/* #navbar_pc .nav_icon_net {
     padding-left: 35px;
-}
+} */
 #navbar_pc .nav_icon {
-    width: 70%;
+    width: 80px;
 }
 
 #navbar_pc .select {
@@ -891,7 +891,7 @@ img[usemap], map area{
 
 /*  */
 /* 手機板 */
-@media (max-width:400px){
+@media (max-width:450px){
 
  /* navbar */
 #navbar_pc{
@@ -920,7 +920,7 @@ img[usemap], map area{
     display:none;     
 }
 
-#navbar_mobile .nav_icon_mobile.show {
+#navbar_mobile .nav_icon_mobile { 
     display: flex;
     flex-wrap: wrap;
     font-size: 22px;
@@ -932,6 +932,8 @@ img[usemap], map area{
     z-index: 9999;
     
 }
+
+
 #navbar_mobile .select2{
     color: #462024;
     padding: 15px 155px;
