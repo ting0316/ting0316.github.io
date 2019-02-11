@@ -920,7 +920,7 @@ img[usemap], map area{
     display:none;     
 }
 
-#navbar_mobile .nav_icon_mobile { 
+#navbar_mobile .nav_icon_mobile.show{ 
     display: flex;
     flex-wrap: wrap;
     font-size: 22px;
